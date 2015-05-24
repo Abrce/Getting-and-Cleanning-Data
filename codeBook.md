@@ -1,0 +1,3 @@
+The run_analysis scripts contains the code to import the files: subject_test, X_test, y_test, subject_train, X_train, y_train, activity_label and features.
+First, it combines the from the subjects of TRAIN and TEST groups. To select the measurements on the mean and standard deviation for each measurement respetively create dataframe meanindex and stdindex with the positions. Then, select from the file features the columns in the position indicated by meanindex and stdindex to get the names of the measurements. Then, creates the dataframe Y that contains the numeric code of the activities of both groups. 
+Finally creates a second dataframe with the the average of each variable for each activity and each subject.
